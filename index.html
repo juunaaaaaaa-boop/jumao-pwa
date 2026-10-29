@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="JUUMAO, ruang digital minimalis untuk produktivitas dan kreativitas.">
+  <title>JUUMAO</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">J<span>.</span></a>
+    <span class="status"><i></i> YOUR DIGITAL SPACE</span>
+    <button id="installBtn" class="install" hidden>Install ↗</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="eyebrow"><span>01</span> PERSONAL SPACE / 2026</div>
+      <h1>Less noise.<br><span>More meaning.</span></h1>
+      <p>Ruang digital untuk ide, karya, dan hal-hal yang ingin kamu selesaikan.</p>
+      <div class="actions">
+        <a href="#apps" class="primary">Explore JUUMAO <span>↗</span></a>
+        <button id="focusBtn" class="secondary">Focus mode ◉</button>
+      </div>
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+    </section>
+
+    <section id="apps" class="section">
+      <div class="section-head">
+        <div><div class="eyebrow">YOUR TOOLKIT</div><h2>Small things. Big ideas.</h2></div>
+        <span class="counter">01 — 04</span>
+      </div>
+      <div class="grid">
+        <article class="app-card" data-app="notes">
+          <div class="card-top"><span class="app-icon">✎</span><span>01 / CREATE</span></div>
+          <h3>Quick Notes</h3><p>Simpan ide sebelum menghilang.</p>
+          <button class="open-app">Open workspace ↗</button>
+        </article>
+        <article class="app-card" data-app="tasks">
+          <div class="card-top"><span class="app-icon">☷</span><span>02 / ORGANIZE</span></div>
+          <h3>Task Board</h3><p>Ubah rencana menjadi progres.</p>
+          <button class="open-app">Open workspace ↗</button>
+        </article>
+        <article class="app-card" data-app="timer">
+          <div class="card-top"><span class="app-icon">◷</span><span>03 / FOCUS</span></div>
+          <h3>Focus Timer</h3><p>Berikan waktu untuk satu hal.</p>
+          <button class="open-app">Open workspace ↗</button>
+        </article>
+        <article class="app-card" data-app="games">
+          <div class="card-top"><span class="app-icon">⌘</span><span>04 / PLAY</span></div>
+          <h3>Mini Games</h3><p>Istirahat sebentar, lanjut lagi.</p>
+          <button class="open-app">Open workspace ↗</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="workspace" class="section workspace" hidden>
+      <div class="section-head">
+        <div><div class="eyebrow">JUUMAO WORKSPACE</div><h2 id="workspaceTitle">Workspace</h2></div>
+        <button id="closeWorkspace" class="secondary">Close ×</button>
+      </div>
+      <div id="workspaceBody"></div>
+    </section>
+
+    <section class="quote">
+      <span class="eyebrow">A REMINDER TO YOURSELF</span>
+      <p id="quoteText">You don't have to do everything.<br>You just have to start somewhere.</p>
+      <button id="newQuote" class="secondary">Another thought ↗</button>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#home">J<span>.</span></a><span>Designed for your own space.</span><span>JUUMAO © 2026</span></footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="./script.js"></script>
+</body>
+  </html>
+  
